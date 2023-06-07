@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<!-- <div clas="parent"> -->
+			
+		<div class="card">
+			<div class="card-header">
+        <h2 class="mt-1 mb-5 text pb-1">SAHAAYI</h2>
+				<h3>Sign In</h3>
+        
+				<div class="d-flex justify-content-end social_icon">
+					
+				</div>
+			</div>
+			<div class="card-body">
+        
+        <!-- <div class="text-center">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAaVBMVEX///8BAQEAAACgoKBtbW3i4uJxcXEPDw/z8/P4+Pje3t7q6uqzs7P7+/tWVlbm5ubJyclnZ2eGhoaRkZHAwMCnp6cuLi4cHBxCQkJiYmJQUFA8PDzU1NQkJCS5ublbW1t6eno1NTVJSUmD5PwpAAAE3ElEQVR4nO1bi5KiOhAdGwUElJeCD0Dg/z9ygXRIgqAQhNyqy6m1amrU4dDP003272/Dhg0bNmzYsGEhmEe117fDe/nYX09/J1UMAiBIL6oY7AF2DQCuahho0FBoXmCpYGCnaIPGDncVFDKOQWUGWwEFnaewg0wBhTNgHDQv0BRQuItWUJETIQjBoCIlkooCS8pISZ3mPKGqNrkGtAweShhUHCLsEaAra1Nm+KyuHz+Udakax8TzlLSH/xZMK7GU6qZDfjN28S1U0aMILjQjdo4iBhawwhCqoeCzLgGgJDFtTrjtoDQVULiIsslTQCEUBUOggELANevqn4pO1bFCoYCCJlKIFFBwRAqpgpTIxFiID+tT8EQrQLI+haRDwXEPHFx3qd5lOuezRrxudSgYXUSLaNrsVjfGZ8PBFmJhBz34PQfz3rQFIJXQFmaZHlQf/rWayfCaaAbzG4Xfz1j1BNcYoaqEdaiZMQiOeP/x1yP/nlMH+/oXZvTVE7efMrhTL9Q319j3WIoMesLxl344vTgGZ4v+TmSg73noufbTkr2H1r9RRqc3X4wF+OUF36Cx9Z7Pbq2z6lmUgscY8PucYD0KdtQyEARiuB4FnexToCtRw9ViwWuLYmdm0lazAnEDwNtez1mLAtmyVq7Qu+9cunWhLgw6j73v6447l8HpQTwOu7d673ViYQDx3Jk3oYHw3vutLy2iNc/M5TB2p74xwR5HoeIwq1K7KSZkjzWP35o1vmYOexhyqNU6GGmFmeraRwq9K4zvsolyeM2gkGJR6M2s83gzyEekZRClVvbq0AwGA6AbJfJrclSsQ/FUjjeD9CMTbAN9+VDDjseGg3xi5khhSAS6zWgzikMuSeFFRpfhWzhqxWBlBmgXYiCfmE9MiA8fOXqONoDrNTSY7D3LUYi+U/gMi2m+oYD6SoE4QppCHU00Rw2pByezrcBPnnJb4ttsCpy8kxsxaYuQSurEaRTTky3LfYm/EuAoLZNQlcAG49I8MqCLapll+RULtMS6pJF1kNpYXIgdJEbtC1LIp381IIIyaxKzzczp92KTx6H9iuUjTimhcPlDd2JxmN4xC6yukzcFHrCFKKfwJDQczo3Tv0nGbnS+xqJh+s0kGAzRxJRG/9NqVDIOk1sFbnMmxxEagd6zx0XkZA0XYlLHk76VYD150bawZ7WhmNoqcME5UXkVGEKt7Q5cNEzumAGd6CYs+6npuN7Izp1MV/Q2ZhS8Rqf0BWORt9wxRrkNEs9vAuqKsYlp4fEOMHjSThuQz8kUzJi6Ylw42O3nRac/KAUJ2UAbxbhAOtD86557s3CNn8qoBiK+xlUHL0alBkY3fr20ltQ3KSVNF97wPR601gY9Jch0giCTHGnc9u/C7dPqyD6zD/76ATItsHV1C4fuw9QMVodlNNpnOKi+6ht8XvtImNeC7crhvMCD04yrsJCG3ZabBCmzwFKnGRL+EhVyxztUFzqZbuLk3HBbv7vUMVSrhHYyImvGOCqKIorJ9bl3ljvYYuviEUdhfGa/NRY91uIYwuV6UDlh4UNOx3o+2Q3RqN4rVzjS4uoxv7ngXnXdctY5bGaFccf/SOB1WfG0mxfeOvscI3dWP+hmelruvx5lefb1MJv9zEEaJ9NU/V80NmzYsGHDhg3/J/wDCFgvDtMxoAkAAAAASUVORK5CYII="
+            style="width: 185px;" alt="logo">
+          <h2 class="mt-1 mb-5 pb-1">SAHAAYI</h2>
+        </div> -->
+
+				<form>
+					<div class="admin">
+						<input type="radio" [(ngModel)]="adminuser"  name="adminuser" value="admin">
+                  <label for="admin">Admin </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+
+                <input type="radio"[(ngModel)]="adminuser"   name="adminuser" value="user">
+                  <label for="user">User  </label>
+					</div><br>
+
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="email" [(ngModel)]="email" name="email" class="form-control"
+              placeholder="enter Email" required/>
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="  fa fas fa-key"></i></span>
+						</div>
+            <input type="password"  [(ngModel)]="password" name="password"class="form-control" placeholder="Enter Password" required />
+						
+					</div>
+					<!-- <div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div> -->
+					<div class="form-group">
+						<input type="submit" value="Login"  (click)="login()" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="register">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</div>
+</div>
+</body>
+</html>

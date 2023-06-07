@@ -1,0 +1,78 @@
+<div class="container mt-5">
+    <!-- <button onclick="detailslist()">show</button> -->
+ 
+    <table class="table table-striped border">
+        <tr>
+            <td><h5>BUILDING DETAILS</h5></td>
+            <td style="text-align: right;">
+            
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>   
+        </tr>
+        <div class="container">
+<!-- <table class="table table-striped border"> -->
+    <tr>
+<th>EMAIL</th>
+<th>LSGI</th>
+<th>LSGI NAME</th>
+<th>NUMBER OF WARDS</th>
+<th>BUILDING NAME</th>
+<th>BUILDING TYPE</th>
+
+<th>FLOOR NO</th>
+
+<th>LOCATION</th>
+
+<th>MAIN ENTRANCE ACCESS</th>
+<th>STEPS</th>
+<th>HAND RAIL</th>
+
+
+<th>RAMP</th>
+
+<th>RAMPRAIL</th>
+
+<th>TWO HANDRAIL</th>
+
+
+    </tr>
+
+    
+    <tr  *ngFor="let a of data">
+      
+      <td>{{a.email}}</td>
+      <td>{{a.lsgi}}</td>
+      <td>{{a.namelsgi}}</td>
+      <td>{{a.ward}}</td>
+      <td>{{a.details[0].buildingname}}</td>
+      <td>{{a.details[0].buildingtype}}</td>
+      <td>{{a.details[0].floornumber}}</td>
+      <td>{{a.details[0].location}}</td>
+      <td>{{a.access[0].
+        mainEntranceAccess}}</td>
+      <td>{{a.access[0].steps}}</td>
+      <td>{{a.access[0].handrail}}</td>
+      <td>{{a.access[0].ramp}}</td>
+      <td>{{a.access[0].ramprail}}</td>
+      <td>{{a.access[0].twoHandrail}}</td>
+      
+      
+
+      
+
+      
+      
+      
+      
+      
+
+    </tr>
+    
+<!-- </table> -->
+</div>
+
+    </table>
+</div>

@@ -1,0 +1,122 @@
+<html>
+  <body>
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				
+			</div>
+			<div class="card-body">
+
+                <form (ngSubmit)="registercheck()" [formGroup]="registerform">
+                  <p style="color:white "><b>Create Your Account</b></p>
+
+                  <div class="form-outline input-group form-group ">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="text"  formControlName="email"name="email" class="form-control"
+                      placeholder="Enter the email" requied/>
+                    
+                  </div>
+                  <div class="form-outline input-group form-group ">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="text"  formControlName="InstitutionName"name="InstitutionName" class="form-control"
+                      placeholder="Enter Institution Name" required/>
+                    
+                  </div>
+                  <div class="d-flex">
+                    <div class="input-group-prepend ">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                 
+                  <div class="form-outlineinput-group form-group  custom-search">
+                    
+                    <input type="text"  size="60" class="form-control custom-search-input"
+                      placeholder="Enter your number" formControlName="phoneno"name="phoneno"requied /> 
+                      <button class="custom-search-botton" >verify</button>
+                      <!-- <div class="bodypop">
+                        <div class="containerpop" id="popup">
+                          <h2>Verify Your Account </h2>
+                          <p> we emailed you the 6 digit code to person@gmail.com<br/>
+                          Enter the code below to confirm email address</p>
+                  
+                          <div class="bodycontainer">
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                              <input type="number"  class="code"placeholder="0" min="0" max="9" required>
+                  
+                          </div>
+                          <div>
+                              <button type="button"  onclick="closePopup() "class="btnpop btn-primarypop">Verify</button>
+                          </div>
+                          <small>if you didn't receive a code !! <strong>RESEND</strong></small>
+                  
+                      </div>
+                      </div> -->
+                     
+                    
+                  </div>
+                </div>
+                  
+                  
+
+                  <div class="form-outline  input-group form-group ">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password"  formControlName="password" name="password" placeholder=" create password"class="form-control" required />
+                    
+                  </div>
+                  <div class="form-outline input-group form-group  ">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" formControlName="repassword" name="repassword" class="form-control"
+                      placeholder="Re-Enter password" required/>
+                    
+                  </div>
+
+                  <div class=" input-group form-group text-center pt-1 mb-4 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2  " type="submit">Register</button>
+                    
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center ">
+                    <p style="color:white" class="  me-2">Already have an account?</p>
+                    <button type="button" class="btn btn-outline-primary ml-2"><a href="">Login</a></button>
+                  </div>
+
+                </form>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex  justify-content-center links">
+                  Don't have an account?<a href="#">Sign Up</a>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <script>
+          let popup=document.getElementById('popup')
+          function popup(){
+                  popup.classList.add("open.popup");
+             }
+
+                function closepoup(){
+                     popup.classList.remove("open.popup");
+                    }
+        </script> -->
+        </body>
+        </html>
+
+
+              

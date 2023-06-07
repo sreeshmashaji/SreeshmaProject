@@ -1,0 +1,17 @@
+.mainbody{
+    background-color:  rgb(246, 223, 192);
+    top:50%;
+    left:50%;
+    padding: 20px;
+    margin:30px 20px 20px  20px;
+    border-radius: 12px;
+    /* transform: translate(-50%,-50%); */
+
+
+}
+
+.card{
+    border-radius: 12px;
+    margin-left: 60px;
+}
+

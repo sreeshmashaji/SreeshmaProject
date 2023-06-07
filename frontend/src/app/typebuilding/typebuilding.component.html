@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<html>
+    <body><div class="bgform">
+        <form (ngSubmit)="buildfun()" [formGroup]="buildingform"><div>
+            <label><h2>NAME OF BUILDING</h2>
+                <input    formControlName="buildingname" name="buildingname" size="75px"placeholder="Enter the name of the building"  /></label>
+                
+            </div><br>
+            <br>
+            <div>
+                <label><h2>TYPE  OF BUILDING</h2>
+                    <input    formControlName="buildingtype" name="buildingtype" size="75px"placeholder="Type of building" list="type1"  /></label>
+                    <datalist id="type1">
+                        <option value="SCHOOL">
+                        <option value="GOVT.OFFICE">
+                        <option value="HOSPITAL">
+                        
+                      </datalist>
+                </div>
+            <div><br><br>
+                <label><h2>NUMBER OF FLOORS </h2>
+                    <input   size="75px"placeholder="Number of floors"list="number1"  formControlName="floornumber" name="floornumber" /></label>
+                    <datalist id="number1">
+                      <option value="SINGLE FLOOR">
+                      <option value="2">
+                      <option value="3">
+                      
+                    </datalist>
+
+            </div>
+            <div>
+                <br><br>
+                <label><h2>LOCATION</h2>
+                    <input   size="75px"placeholder="Enter the location" formControlName="location"  name="location" /></label>
+            </div>
+            <div><br>
+                
+                <button class="but" type="submit" >Next</button>
+            </div>
+        </form>
+    </div></body>
+</html>

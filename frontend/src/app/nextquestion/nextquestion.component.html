@@ -1,0 +1,97 @@
+
+<app-navbar></app-navbar>
+<html>
+
+<body><form (ngSubmit)="accessfun()" [formGroup]="accessform">
+    <div class="mainbody">
+        <h2>
+            Please answer the following questionnaire </h2>
+        <br>
+        <h1>MAIN ENTRANCE</h1>
+        <div class="d-flex">
+            <div class="first">
+                <p>Is the main entrance of the building accessible?</p><br>
+                <input type="radio" formControlName="mainEntranceAccess"  name="mainEntranceAccess" value="yes">
+                  <label for="yes">YES</label>
+                <input type="radio"formControlName="mainEntranceAccess"   name="mainEntranceAccess" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+
+
+            </div>
+            <div class="first">
+                <p>Are there any steps at the entrance?</p><br>
+                <input type="radio" formControlName="steps"  name="steps" value="yes">
+                  <label for="yes">YES</label>
+                <input type="radio" formControlName="steps"  name="steps" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+            </div>
+            <div class="first">
+                <p>Do the steps have handrail?</p><br>
+                <input type="radio" formControlName="handrail"  name="handrail" value="yes">
+                  <label for="yes">YES</label>
+                <input type="radio" formControlName="handrail"  name="handrail" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+            </div>
+
+        </div>
+        <div class="d-flex">
+            <div class="first">
+                <p>Is there a ramp?</p><br>
+                <input type="radio" formControlName="ramp"  name="ramp" value="yes">
+                  <label for="yes">YES</label>
+                <input type="radio" formControlName="ramp"  name="ramp" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+
+
+            </div>
+            <div class="first">
+                <p>Does the ramp have a railing?</p><br>
+                <input type="radio"formControlName="ramprail"  name="ramprail" value="yes">
+                  <label for="yes">YES</label>
+                <input type="radio"formControlName="ramprail"  name="ramprail" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+            </div>
+            <div class="first">
+                <p>Are there handrails on both the sides?</p><br>
+                <input type="radio" formControlName="twoHandrail"  name="twoHandrail" value="yes" >
+                 <label for="yes">YES</label>
+                <input type="radio" formControlName="twoHandrail"  name="twoHandrail" value="no">
+                  <label for="no">NO</label>
+                <!-- <button class="remark" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button> -->
+            </div>
+
+        </div>
+        <button class="remark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Remark</button>
+        <button type="submit" class=" next btn btn-primary">Submit and Next</button>
+
+    </div>
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Remark </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <textarea></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</form>   
+    
+</body>
+
+</html>

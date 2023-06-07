@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+
+<html>
+    <body><div class="bgform">
+        <form (ngSubmit)="lsgifun()" [formGroup]="questionform"><div>
+            <label><h2>TYPE OF LSGI</h2>
+                <input    formControlName="lsgi" name="lsgi" size="75px"placeholder="choose one LSGI" list="type1"  /></label>
+                <datalist id="type1">
+                  <option value="MUNICIPALITY">
+                  <option value="GRAMA PANCHAYATH">
+                  <option value="CORPORATION">
+                  
+                </datalist>
+            </div>
+            <div><br><br>
+                <label><h2>NAME OF LSGI</h2>
+                    <input   size="75px"placeholder="choose one LSGI"list="name1"  formControlName="namelsgi" name="namelsgi" /></label>
+                    <datalist id="name1">
+                      <option value="KOYILANDI">
+                      <option value="ELATHUR">
+                      <option value="CHNAGAROTH">
+                      
+                    </datalist>
+
+            </div>
+            <div>
+                <br><br>
+                <label><h2>NUMBER OF WARDS</h2>
+                    <input   size="75px"placeholder="Enter  number of Wards" formControlName="ward"  name="ward" /></label>
+            </div>
+            <div><br>
+                
+                <button class="but" type="submit" >Next</button>
+            </div>
+        </form>
+    </div></body>
+</html>
